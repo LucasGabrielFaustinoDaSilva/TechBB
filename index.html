@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>TechBB</title>
+</head>
+
+<body>
+  <header>
+    <h1>Bem-vindos ao TechBB</h1>
+    <p>Um site simulado para vendas tecnológicas em Barra Bonita</p>
+    <nav>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#fale_conosco">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="servicos">
+      <h2>Nossos serviços</h2>
+      <ul class="lista-servicos">
+        <li>
+          <article>
+            <img src="https://images.pexels.com/photos/6755053/pexels-photo-6755053.jpeg" alt="pessoa concertando celular" />
+            <h3>Conserto de celulares</h3>
+            <p>Reparo especializado em smartphones de todas as marcas.</p>
+            <a href="https://wa.me/5514910041539?text=Gostaria%20de%20saber%20mais%20sobre%20conserto%20de%20celulares">Fale comigo no WhatsApp</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="https://images.pexels.com/photos/6754846/pexels-photo-6754846.jpeg" alt="pessoa configurando computador" />
+            <h3>Manutenção de computadores</h3>
+            <p>Manutenção preventiva e corretiva para seu computador.</p>
+            <a href="https://wa.me/5514910041539?text=Gostaria%20de%20saber%20mais%20sobre%20manutenção%20de%20computadores">Fale comigo no WhatsApp</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="https://images.pexels.com/photos/3803517/pexels-photo-3803517.jpeg" alt="imagem de um código de programação" />
+            <h3>Serviços Web</h3>
+            <p>Soluções completas para sua presença online.</p>
+            <ul>
+              <li>Criação de landing page</li>
+              <li>Análise de Power BI</li>
+              <li>Sites completos em Next.js</li>
+            </ul>
+            <a href="https://wa.me/5514910041539?text=Gostaria%20de%20saber%20mais%20sobre%20serviços%20web">Fale comigo no WhatsApp</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section id="produtos">
+      <h2>Nossos produtos</h2>
+      <div class="lista-produtos">
+        <article>
+          <img src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg" alt="celular" />
+          <h3>Celular Motorola</h3>
+          <p>De <span class="preco">R$2999,99</span> por <span class="promocao">R$1999,99</span></p>
+          <button type="button">Comprar</button>
+        </article>
+        <article>
+          <img src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg" alt="tablet" />
+          <h3>Tablet Asus</h3>
+          <p>De <span class="preco">R$899,99</span> por <span class="promocao">R$699,99</span></p>
+          <button type="button">Comprar</button>
+        </article>
+        <article>
+          <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="notebook" />
+          <h3>Notebook Asus</h3>
+          <p>De <span class="preco">R$3899,99</span> por <span class="promocao">R$2899,99</span></p>
+          <button type="button">Comprar</button>
+        </article>
+      </div>
+    </section>
+    <section id="fale_conosco">
+      <h2>Fale conosco</h2>
+      <form action="#" method="post" accept-charset="utf-8" autocomplete="on">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="mensagem">Assunto</label>
+        <textarea name="mensagem" id="mensagem" rows="8" cols="40" minlength="10" required></textarea>
+        <p id="feedback"></p>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Desenvolvido por Lucas Gabriel</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
